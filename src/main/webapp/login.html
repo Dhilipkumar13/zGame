@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="login.css"><title>Login</title>
+</head>
+<body>
+<section class="forms-section" >
+  <h1 class="section-title">Login Page</h1>
+  <img alt="hai img not found" src="Tic_tac_toe.svg.png" height="80px" >
+  <div class="forms">
+    <div class="form-wrapper is-active">
+      <button type="button" class="switcher switcher-login">
+        Login
+        <span class="underline"></span>
+      </button>
+      <form class="form form-login" action="Servlet_login" method="post">
+        <fieldset>
+          <legend>Please, enter your email and password for login.</legend>
+          <div class="input-block">
+            <label for="login-email">User1 E-mail</label>
+            <input id="login-email" type="email" name="in_name" required>
+          </div>
+          <div class="input-block">
+            <label for="login-password">User1 Password</label>
+            <input id="login-password" type="password" name="in_password" required>
+          </div>
+          <div class="input-block">
+            <label for="login-email-user2">User2 E-mail</label>
+            <input id="login-email-user2" type="email" name="in_name_2" required>
+          </div>
+          <div class="input-block">
+            <label for="login-password-user2">User2 Password</label>
+            <input id="login-password-user2" type="password" name="in_password_2" required>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-login">Login</button>
+      </form>
+    </div>
+   <div class="form-wrapper">
+      <button type="button" class="switcher switcher-signup">
+        Sign Up
+        <span class="underline"></span>
+      </button>
+      <form class="form form-signup" action="servlet_signup" method="post">
+        <fieldset>
+          <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+          <div class="input-block">
+          	<br>
+            <label for="signup-email">E-mail</label>
+            <input id="signup-email" type="email" name="email1"required>
+          </div>
+          <div class="input-block">
+            <label for="signup-password">Password</label>
+            <input id="signup-password" type="password" name="pass1"required>
+          </div>
+          <div class="input-block">
+            <label for="signup-password-confirm">Confirm password</label>
+            <input id="signup-password-confirm" type="password" name="pass2">
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-signup">Continue</button>
+      </form>
+    </div>
+  </div>
+</section>
+<script src="login.js tic-tac-toe.js"></script>
+</body>
+</html>
